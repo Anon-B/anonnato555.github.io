@@ -4,9 +4,9 @@ header('Content-Type: text/html; charset=utf-8');
 //ini_set("log_errors", 1);
 //ini_set("error_log", "php-error.txt");
 require_once('LINEBotTiny.php');
-$access_token = '9b209Ur4FibQQFrm/Dj5jgFG4Gm84umxU1NDWF4pkOmv+FdDeJp1gLOEIKaCnCw4nQL4cv8kjAjQ5rNq40VA1nD6aaDqN88gqx18b8MEs51tBrtL0QGGxoWRs5eSipfn+MbKcHdlBI5J6FmOaHuxEgdB04t89/1O/w1cDnyilFU=';
-$channelAccessToken = '9b209Ur4FibQQFrm/Dj5jgFG4Gm84umxU1NDWF4pkOmv+FdDeJp1gLOEIKaCnCw4nQL4cv8kjAjQ5rNq40VA1nD6aaDqN88gqx18b8MEs51tBrtL0QGGxoWRs5eSipfn+MbKcHdlBI5J6FmOaHuxEgdB04t89/1O/w1cDnyilFU=';
-$channelSecret = 'e3ae5ca36567a92397f2b08dd783c29a';
+$access_token = 'Z+82Dj/iMhmE3mjr2EKu+0+W5a4O0ZiLT8SiohLjwTwSINQ+Kd/v+FdHPH9vSHriwk3IkO7Kio8GWTum007bD3r8/1BCtayNWvf+cDL8FznI3YyKcJ0OazxuBuzrlvXkpn8mYfi5MwddhMfPi3JvvgdB04t89/1O/w1cDnyilFU=';
+$channelAccessToken = 'Z+82Dj/iMhmE3mjr2EKu+0+W5a4O0ZiLT8SiohLjwTwSINQ+Kd/v+FdHPH9vSHriwk3IkO7Kio8GWTum007bD3r8/1BCtayNWvf+cDL8FznI3YyKcJ0OazxuBuzrlvXkpn8mYfi5MwddhMfPi3JvvgdB04t89/1O/w1cDnyilFU=';
+$channelSecret = '7f9d9cf64df0b478ed1d2c5775a60c45';
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 $botName = "BOT";
 //-----------auto send----push message------------------//
@@ -42,7 +42,7 @@ if (!is_null($events['events'])) {
 					$uid = $event['source']['userId'];
 					//$url = 'https://api.line.me/v2/bot/group/'.$gid.'/member/'.$uid; //กลุ่ม
 					$url = 'https://api.line.me/v2/bot/profile/'.$uid;			//user
-					$channelAccessToken2 = '9b209Ur4FibQQFrm/Dj5jgFG4Gm84umxU1NDWF4pkOmv+FdDeJp1gLOEIKaCnCw4nQL4cv8kjAjQ5rNq40VA1nD6aaDqN88gqx18b8MEs51tBrtL0QGGxoWRs5eSipfn+MbKcHdlBI5J6FmOaHuxEgdB04t89/1O/w1cDnyilFU=';
+					$channelAccessToken2 = 'Z+82Dj/iMhmE3mjr2EKu+0+W5a4O0ZiLT8SiohLjwTwSINQ+Kd/v+FdHPH9vSHriwk3IkO7Kio8GWTum007bD3r8/1BCtayNWvf+cDL8FznI3YyKcJ0OazxuBuzrlvXkpn8mYfi5MwddhMfPi3JvvgdB04t89/1O/w1cDnyilFU=';
 					$header = array(
 						"Content-Type: application/json",
 						'Authorization: Bearer '.$channelAccessToken2,
@@ -77,7 +77,7 @@ if (!is_null($events['events'])) {
 					$uid = $event['source']['userId'];
 					//$url = 'https://api.line.me/v2/bot/group/'.$gid.'/member/'.$uid; //กลุ่ม
 					$url = 'https://api.line.me/v2/bot/profile/'.$uid;			//user
-					$channelAccessToken2 = '9b209Ur4FibQQFrm/Dj5jgFG4Gm84umxU1NDWF4pkOmv+FdDeJp1gLOEIKaCnCw4nQL4cv8kjAjQ5rNq40VA1nD6aaDqN88gqx18b8MEs51tBrtL0QGGxoWRs5eSipfn+MbKcHdlBI5J6FmOaHuxEgdB04t89/1O/w1cDnyilFU=';
+					$channelAccessToken2 = 'Z+82Dj/iMhmE3mjr2EKu+0+W5a4O0ZiLT8SiohLjwTwSINQ+Kd/v+FdHPH9vSHriwk3IkO7Kio8GWTum007bD3r8/1BCtayNWvf+cDL8FznI3YyKcJ0OazxuBuzrlvXkpn8mYfi5MwddhMfPi3JvvgdB04t89/1O/w1cDnyilFU=';
 					$header = array(
 						"Content-Type: application/json",
 						'Authorization: Bearer '.$channelAccessToken2,
